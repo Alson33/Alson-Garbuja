@@ -158,12 +158,19 @@ header nav ul a:hover, header nav ul .active-link {
     left: 0;
   }
   header nav ul {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
   }
+  header nav ul li {
+    width: 100%;
+  }
   header nav ul li a {
-    padding: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
   }
   header nav ul li a i {
     display: inline !important;

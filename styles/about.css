@@ -1,3 +1,7 @@
+h2 {
+  text-align: center;
+}
+
 .about-container {
   width: 70%;
   margin: 30px auto;
@@ -40,7 +44,7 @@
   padding: 0 1em;
 }
 
-.about-container .description-section h2 {
+.about-container .description-section h3 {
   text-align: left;
 }
 
@@ -106,11 +110,19 @@
 
 @media screen and (max-width: 700px) {
   .about-container {
-    width: 90%;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 2rem 0;
+  }
+  .about-container .description-section .skills-section .skill-set-holder {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about-container .description-section .skills-section .skill-set-holder .skill i {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=about.css.map */

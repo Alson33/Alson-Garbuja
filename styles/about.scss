@@ -1,4 +1,8 @@
 
+h2{
+    text-align: center;
+}
+
 .about-container {
     width: 70%;
     margin: 30px auto;
@@ -39,7 +43,7 @@
         .description-section {
             padding: 0 1em;
 
-            h2{
+            h3{
                 text-align: left;
             }
             
@@ -103,7 +107,22 @@
 
 @media screen and (max-width: 700px) {
     .about-container {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
+        padding: 2rem 0;
+
+            .description-section {
+                .skills-section{
+                    .skill-set-holder {
+                        justify-content: space-around;
+
+                            .skill {
+                                i {
+                                    font-size: 3rem;
+                                }
+                            }
+                    }
+                }
+            }
     }
 }

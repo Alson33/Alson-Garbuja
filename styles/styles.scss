@@ -131,15 +131,20 @@ header {
             left: 0;
 
                 ul {
-                    justify-content: space-around;
+                    justify-content: space-between;
                     padding: 0;
 
                         li {
+                            width: 100%;
                             a {
-                                padding: 1em;
-                                i {
-                                    display: inline !important;
-                                }
+                                display: block;
+                                width: 100%;
+                                text-align: center;
+                                padding: 1em 0;
+
+                                    i {
+                                        display: inline !important;
+                                    }
                             }
                         }
                 }
