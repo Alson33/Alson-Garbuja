@@ -1,0 +1,35 @@
+.about-container {
+  width: 70%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-container .profile-section img {
+  width: 180px;
+  height: 180px;
+}
+
+.about-container .profile-section .social-links {
+  word-spacing: .5rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.about-container .description-section {
+  padding: 0 1em;
+}
+
+.about-container .description-section h2 {
+  text-align: start;
+}
+
+.about-container .description-section p {
+  padding: 10px 5px;
+  font-size: 1.25rem;
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,43 @@
+.project-wrapper {
+  padding: 30px;
+  text-align: center;
+}
+
+.project-wrapper .projects-holder .project {
+  width: 200px;
+  height: 300px;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.project-wrapper .stepper-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-wrapper .stepper-holder .stepper {
+  background-color: #fafafa;
+  padding: 1em;
+  margin: 0 1rem;
+  color: black;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.project-wrapper .stepper-holder .active-stepper {
+  background-color: rgba(224, 224, 224, 0.493);
+  width: 100px;
+}
+
+.project-wrapper .stepper-holder .stepper:hover {
+  background-color: rgba(131, 131, 131, 0.568);
+}
+/*# sourceMappingURL=project.css.map */

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.904);
+    color: rgb(226, 226, 226);
+}
+
+a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: .5em 1em;
+}
+
+
+
+@keyframes bgColor{
+    from {
+        background-color: initial;
+        color: white;
+    }
+    to {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+@keyframes bgColor2{
+    from {
+        background-color: yellow;
+    }
+    to {
+        background-color: rgb(95, 95, 14);
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+        span {
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+
+        nav {
+            width: 40%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+
+                    a:hover, .active-link {
+                        color: black;
+                        background-color: yellow;
+                        animation: bgColor .5s ease-in-out;
+                    }
+            }
+        }
+}
+
+.index-main-wrapper {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em;
+    line-height: 4rem;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .btn-wrapper {
+            .btn {
+                margin: 1rem 1rem 0 0;
+                padding: 1em;
+                background-color: yellow;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                cursor: pointer;
+            
+                    a{
+                        color: black;
+                    }
+
+                    a:hover {
+                        background-color: initial;
+                    }
+            }
+
+            .btn:hover{
+                background-color: rgb(95, 95, 14);
+                animation: bgColor2 .5s ease-in-out;
+                box-shadow: 1px 1px 3px rgb(83, 83, 83);
+            }
+        }
+}
+
+
+@media screen and (min-width: 900px){
+    
+}

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.904);
+  color: #e2e2e2;
+}
+
+a {
+  color: #e2e2e2;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: .5em 1em;
+}
+
+@-webkit-keyframes bgColor {
+  from {
+    background-color: initial;
+    color: white;
+  }
+  to {
+    background-color: yellow;
+    color: black;
+  }
+}
+
+@keyframes bgColor {
+  from {
+    background-color: initial;
+    color: white;
+  }
+  to {
+    background-color: yellow;
+    color: black;
+  }
+}
+
+@-webkit-keyframes bgColor2 {
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: #5f5f0e;
+  }
+}
+
+@keyframes bgColor2 {
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: #5f5f0e;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header span img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+header nav {
+  width: 40%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+header nav ul a:hover, header nav ul .active-link {
+  color: black;
+  background-color: yellow;
+  -webkit-animation: bgColor .5s ease-in-out;
+          animation: bgColor .5s ease-in-out;
+}
+
+.index-main-wrapper {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 2em;
+  line-height: 4rem;
+}
+
+.index-main-wrapper h1 {
+  font-size: 5rem;
+}
+
+.index-main-wrapper h3 {
+  font-size: 2rem;
+}
+
+.index-main-wrapper .btn-wrapper .btn {
+  margin: 1rem 1rem 0 0;
+  padding: 1em;
+  background-color: yellow;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.index-main-wrapper .btn-wrapper .btn a {
+  color: black;
+}
+
+.index-main-wrapper .btn-wrapper .btn a:hover {
+  background-color: initial;
+}
+
+.index-main-wrapper .btn-wrapper .btn:hover {
+  background-color: #5f5f0e;
+  -webkit-animation: bgColor2 .5s ease-in-out;
+          animation: bgColor2 .5s ease-in-out;
+  -webkit-box-shadow: 1px 1px 3px #535353;
+          box-shadow: 1px 1px 3px #535353;
+}
+/*# sourceMappingURL=styles.css.map */

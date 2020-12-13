@@ -1,0 +1,40 @@
+
+.project-wrapper {
+    padding: 30px;
+    text-align: center;
+
+        .projects-holder {
+
+            .project {
+                width: 200px;
+                height: 300px;
+                border: 1px solid yellow;
+                border-radius: 10px;
+                margin: 0 1rem 1rem 1rem;
+            }
+        }
+
+        .stepper-holder{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .stepper {
+                background-color: rgb(250, 250, 250);
+                padding: 1em;
+                margin: 0 1rem;
+                color: black;
+                cursor: pointer;
+                border-radius: 50px;
+            }
+
+            .active-stepper {
+                background-color: rgba(224, 224, 224, 0.493);
+                width: 100px;
+            }
+
+            .stepper:hover {
+                background-color: rgba(131, 131, 131, 0.568);
+            }
+        }
+}
