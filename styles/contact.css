@@ -45,4 +45,10 @@ input[type='submit'] {
   background-color: yellow;
   color: black;
 }
+
+@media screen and (max-width: 700px) {
+  .form-wrapper {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

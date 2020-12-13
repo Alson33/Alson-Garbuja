@@ -1,6 +1,13 @@
 .project-wrapper {
   padding: 30px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .project-wrapper .projects-holder .project {
@@ -39,5 +46,31 @@
 
 .project-wrapper .stepper-holder .stepper:hover {
   background-color: rgba(131, 131, 131, 0.568);
+}
+
+@media screen and (max-width: 700px) {
+  .project-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .project-wrapper .stepper-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .project-wrapper .stepper-holder .stepper {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 50px;
+  }
+  .project-wrapper .stepper-holder .active-stepper {
+    height: 100px;
+    border-radius: 10px;
+  }
 }
 /*# sourceMappingURL=project.css.map */

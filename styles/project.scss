@@ -2,6 +2,8 @@
 .project-wrapper {
     padding: 30px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
         .projects-holder {
 
@@ -37,4 +39,25 @@
                 background-color: rgba(131, 131, 131, 0.568);
             }
         }
+}
+
+@media screen and (max-width: 700px) {
+    .project-wrapper {
+        flex-direction: row;
+
+            .stepper-holder {
+                flex-direction: column;
+                justify-content: space-around;
+
+                    .stepper {
+                        justify-self: center;
+                        width: 50px;
+                    }
+
+                    .active-stepper {
+                        height: 100px;
+                        border-radius: 10px;
+                    }
+            }
+    }
 }
