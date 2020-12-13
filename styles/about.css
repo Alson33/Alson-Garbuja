@@ -20,16 +20,87 @@
   cursor: pointer;
 }
 
+.about-container .profile-section .fb:hover {
+  color: steelblue;
+}
+
+.about-container .profile-section .tw:hover {
+  color: lightskyblue;
+}
+
+.about-container .profile-section .ing:hover {
+  color: red;
+}
+
+.about-container .profile-section .git:hover {
+  color: orangered;
+}
+
 .about-container .description-section {
   padding: 0 1em;
 }
 
 .about-container .description-section h2 {
-  text-align: start;
+  text-align: left;
 }
 
 .about-container .description-section p {
-  padding: 10px 5px;
+  text-align: justify;
+  padding: 1em 0;
   font-size: 1.25rem;
+}
+
+.about-container .description-section .skills-section {
+  line-height: 2rem;
+}
+
+.about-container .description-section .skills-section h2 {
+  text-align: center;
+}
+
+.about-container .description-section .skills-section .skill-set-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.about-container .description-section .skills-section .skill-set-holder .skill {
+  border: 1px solid whitesmoke;
+  padding: 2em 2.5em;
+  border-radius: 10px;
+  line-height: 2rem;
+}
+
+.about-container .description-section .skills-section .skill-set-holder .skill i {
+  font-size: 5rem;
+}
+
+.about-container .description-section .skills-section .skill-set-holder .skill:hover {
+  background-color: #f0f0f02f;
+  text-shadow: 1px 1px black;
+  border-style: double;
+}
+
+.about-container .description-section .skills-section .skill-set-holder .one:hover {
+  color: lightblue;
+  border-color: lightblue;
+}
+
+.about-container .description-section .skills-section .skill-set-holder .two:hover {
+  color: steelblue;
+  border-color: steelblue;
+}
+
+.about-container .description-section .skills-section .skill-set-holder .three:hover {
+  color: yellow;
+  border-color: yellow;
+}
+
+.about-container .description-section .skills-section .skill-set-holder .four:hover {
+  color: orangered;
+  border-color: orangered;
 }
 /*# sourceMappingURL=about.css.map */

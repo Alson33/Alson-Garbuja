@@ -18,17 +18,85 @@
                 font-size: 1.5rem;
                 cursor: pointer;
             }
+
+            .fb:hover{
+                color: steelblue;
+            }
+
+            .tw:hover{
+                color: lightskyblue;
+            }
+
+            .ing:hover{
+                color: red;
+            }
+
+            .git:hover{
+                color: orangered;
+            }
         }
 
         .description-section {
             padding: 0 1em;
+
             h2{
-                text-align: start;
+                text-align: left;
             }
             
             p {
-                padding: 10px 5px;
+                text-align: justify;
+                padding: 1em 0;
                 font-size: 1.25rem;
+            }
+
+            .skills-section {
+                line-height: 2rem;
+
+                h2 {
+                    text-align: center;
+                }
+
+                .skill-set-holder {
+                    display: flex;
+                    justify-content: space-evenly;
+
+                        .skill {
+                            border: 1px solid whitesmoke;
+                            padding: 2em 2.5em;
+                            border-radius: 10px;
+                            line-height: 2rem;
+                            
+                                i {
+                                    font-size: 5rem;
+                                }
+                        }
+
+                        .skill:hover {
+                            background-color: #f0f0f02f;
+                            text-shadow: 1px 1px black;
+                            border-style: double;
+                        }
+
+                        .one:hover{
+                            color: lightblue;
+                            border-color: lightblue;
+                        }
+
+                        .two:hover{
+                            color: steelblue;
+                            border-color: steelblue;
+                        }
+
+                        .three:hover{
+                            color: yellow;
+                            border-color: yellow;
+                        }
+
+                        .four:hover{
+                            color: orangered;
+                            border-color: orangered;
+                        }
+                }
             }
         }
 }
