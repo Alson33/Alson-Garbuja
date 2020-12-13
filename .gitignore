@@ -1,4 +1,4 @@
-styles/*.scss
-styles/*.css.map
+*.scss
+*.css.map
 
 .vscode
