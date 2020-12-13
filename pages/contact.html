@@ -6,6 +6,7 @@
     <title>Contact me</title>
 
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     
@@ -24,7 +25,25 @@
     </header>
 
     <main>
-        <p>Contact</p>
+        <div class="form-wrapper">
+            <h2>EMAIL ME</h2>
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <td><input type="email" name="email" placeholder="Email"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="sub" placeholder="Subject"/></td>
+                    </tr>
+                    <tr>
+                        <td><textarea name="mssg" cols="30" rows="10" placeholder="Message.."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Send Email" name="sendMail"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </main>
 
     <script src="../scripts/script.js"></script>
