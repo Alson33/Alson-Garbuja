@@ -11,29 +11,34 @@ form, table, input, textarea {
 }
 
 form, input, textarea {
-  padding: 1em;
+  padding: 1em 0;
   line-height: 1.5rem;
 }
 
 input, textarea {
-  background-color: #f0f0f02f;
+  background-color: inherit;
   color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #ffffff;
+  letter-spacing: .25ch;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #ffffff;
+  letter-spacing: .25ch;
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   color: #ffffff;
+  letter-spacing: .25ch;
 }
 
 input::placeholder, textarea::placeholder {
   color: #ffffff;
+  letter-spacing: .25ch;
 }
 
 input[type='submit'] {

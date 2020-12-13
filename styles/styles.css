@@ -86,6 +86,10 @@ header nav ul {
   list-style-type: none;
 }
 
+header nav ul a i {
+  display: none !important;
+}
+
 header nav ul a:hover, header nav ul .active-link {
   color: black;
   background-color: yellow;
@@ -141,5 +145,28 @@ header nav ul a:hover, header nav ul .active-link {
           animation: bgColor2 .5s ease-in-out;
   -webkit-box-shadow: 1px 1px 3px #535353;
           box-shadow: 1px 1px 3px #535353;
+}
+
+@media screen and (max-width: 700px) {
+  header span {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  header nav ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0;
+  }
+  header nav ul li a {
+    padding: 1em;
+  }
+  header nav ul li a i {
+    display: inline !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
