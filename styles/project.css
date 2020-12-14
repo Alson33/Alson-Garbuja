@@ -10,6 +10,12 @@
           flex-direction: column;
 }
 
+.project-wrapper .projects-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .project-wrapper .projects-holder .project {
   width: 200px;
   height: 300px;
@@ -54,19 +60,35 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .project-wrapper .stepper-holder {
+  .project-wrapper .projects-holder {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  }
+  .project-wrapper .stepper-holder {
+    position: fixed;
+    top: 50%;
+    right: 2em;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .project-wrapper .stepper-holder .stepper {
     -ms-grid-column-align: center;
         justify-self: center;
     width: 50px;
+    margin: 1em 0;
   }
   .project-wrapper .stepper-holder .active-stepper {
     height: 100px;

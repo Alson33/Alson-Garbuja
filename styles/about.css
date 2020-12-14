@@ -24,6 +24,10 @@ h2 {
   cursor: pointer;
 }
 
+.about-container .profile-section .social-links a {
+  padding: 0;
+}
+
 .about-container .profile-section .fb:hover {
   color: steelblue;
 }

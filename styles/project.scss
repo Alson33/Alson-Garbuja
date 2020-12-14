@@ -6,6 +6,7 @@
     flex-direction: column;
 
         .projects-holder {
+            display: flex;
 
             .project {
                 width: 200px;
@@ -44,14 +45,24 @@
 @media screen and (max-width: 700px) {
     .project-wrapper {
         flex-direction: row;
+        justify-content: space-between;
+
+            .projects-holder{
+                flex-direction: column;
+            }
 
             .stepper-holder {
+                position: fixed;
+                top: 50%;
+                right: 2em;
+                transform: translateY(-50%);
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: start;
 
                     .stepper {
                         justify-self: center;
                         width: 50px;
+                        margin: 1em 0;
                     }
 
                     .active-stepper {

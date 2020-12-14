@@ -54,6 +54,8 @@ header {
 
         nav {
             width: 40%;
+            background-color: inherit;
+
             ul {
                 display: flex;
                 justify-content: space-between;
@@ -120,15 +122,19 @@ header {
 
 @media screen and (max-width: 700px){
     header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+
         span {
             display: none;
         }
 
         nav {
             width: 100%;
-            position: fixed;
-            bottom: 0;
-            left: 0;
+            background-color: black;
 
                 ul {
                     justify-content: space-between;

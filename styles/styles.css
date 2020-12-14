@@ -74,6 +74,7 @@ header span img {
 
 header nav {
   width: 40%;
+  background-color: inherit;
 }
 
 header nav ul {
@@ -148,14 +149,19 @@ header nav ul a:hover, header nav ul .active-link {
 }
 
 @media screen and (max-width: 700px) {
+  header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+  }
   header span {
     display: none;
   }
   header nav {
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    background-color: black;
   }
   header nav ul {
     -webkit-box-pack: justify;
