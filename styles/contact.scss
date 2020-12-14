@@ -1,0 +1,40 @@
+
+.form-wrapper {
+    width: 30%;
+    margin: auto auto;
+    text-align: center;
+
+}
+
+form, table, input, textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+form, input, textarea {
+    padding: 1em 0;
+    line-height: 1.5rem;
+}
+
+input, textarea {
+    background-color: inherit;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ffffff;
+    letter-spacing: .25ch;
+}
+
+input[type='submit']{
+    background-color: yellow;
+    color: black;
+}
+
+@media screen and (max-width: 700px){
+    .form-wrapper {
+        width: 80%;
+    }
+}
