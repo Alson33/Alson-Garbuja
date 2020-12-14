@@ -118,11 +118,15 @@ h2 {
     padding: 2rem 0;
   }
   .about-container .description-section .skills-section .skill-set-holder {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  .about-container .description-section .skills-section .skill-set-holder .skill i {
-    font-size: 3rem;
+  .about-container .description-section .skills-section .skill-set-holder .skill {
+    padding: 1em 1.5em;
+  }
+  .about-container .description-section .skills-section .skill-set-holder .skill i, .about-container .description-section .skills-section .skill-set-holder .skill h3 {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=about.css.map */
