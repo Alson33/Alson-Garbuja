@@ -1,4 +1,4 @@
-.form-wrapper {
+.form-wrapper, .social-platforms-wrapper {
   width: 30%;
   margin: auto auto;
   text-align: center;
@@ -46,9 +46,63 @@ input[type='submit'] {
   color: black;
 }
 
+@-webkit-keyframes fontSize {
+  from {
+    font-size: initial;
+  }
+  to {
+    font-size: 2rem;
+  }
+}
+
+@keyframes fontSize {
+  from {
+    font-size: initial;
+  }
+  to {
+    font-size: 2rem;
+  }
+}
+
+.social-platforms-wrapper h3 {
+  margin: 1em 0;
+}
+
+.social-platforms-wrapper .findme-links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.social-platforms-wrapper .findme-links-wrapper a:hover {
+  font-size: 2rem;
+  -webkit-animation: fontSize 0.5s ease-in-out;
+          animation: fontSize 0.5s ease-in-out;
+}
+
+.social-platforms-wrapper .findme-links-wrapper .fiverr-link:hover {
+  color: #069e06;
+}
+
+.social-platforms-wrapper .findme-links-wrapper .fiverr-link:hover div svg g path {
+  fill: #069e06;
+}
+
+.social-platforms-wrapper .findme-links-wrapper .linkedin-link:hover {
+  color: steelblue;
+}
+
+.social-platforms-wrapper .findme-links-wrapper .github-link:hover {
+  color: orangered;
+}
+
 @media screen and (max-width: 700px) {
-  .form-wrapper {
+  .form-wrapper, .social-platforms-wrapper {
     width: 80%;
+    margin: 1em auto;
   }
 }
 /*# sourceMappingURL=contact.css.map */

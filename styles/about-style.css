@@ -24,6 +24,11 @@ h2 {
   cursor: pointer;
 }
 
+.about-container .profile-section .social-links span {
+  word-spacing: 0rem;
+  font-size: 1rem;
+}
+
 .about-container .profile-section .social-links a {
   padding: 0;
 }
