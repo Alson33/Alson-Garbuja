@@ -1,19 +1,54 @@
 
+@keyframes moveRight {
+    0% {
+      transform: translateX(-27rem) scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0rem) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 .project-wrapper {
     padding: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
 
-        .projects-holder {
+        .project-div-holder {
             display: flex;
+            justify-content: center;
+            overflow: hidden;
 
-            .project {
-                width: 200px;
-                height: 300px;
-                border: 1px solid yellow;
-                border-radius: 10px;
-                margin: 0 1rem 1rem 1rem;
+            .projects-holder {
+                display: none;
+    
+                .project {
+                    width: 200px;
+                    height: 300px;
+                    border: 1px solid yellow;
+                    border-radius: 10px;
+                    margin: 0 1rem 1rem 1rem;
+                }
+            }
+
+            .active-projects-holder {
+                display: flex;
+                animation: fadeIn 1s ease-in-out;
+            }
+
+            .inactive-projects-holder {
+                animation: moveRight 1s ease-in-out;
             }
         }
 
@@ -21,23 +56,36 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 1em 0;
 
             .stepper {
-                background-color: rgb(250, 250, 250);
+                background-color: #ffffff11;
                 padding: 1em;
-                margin: 0 1rem;
-                color: black;
+                // margin: 0 1rem;
+                color: yellow;
                 cursor: pointer;
+                border: 2px solid yellow;
                 border-radius: 50px;
             }
 
             .active-stepper {
-                background-color: rgba(224, 224, 224, 0.493);
                 width: 100px;
             }
 
-            .stepper:hover {
+            .active-stepper, .stepper:hover {
                 background-color: rgba(131, 131, 131, 0.568);
+            }
+
+            .stepper-connector {
+                background-color: #ffffff11;
+                height: 5px;
+                width: 60px;
+                border-left: none;
+                border-right: none;
+            }
+
+            .active-stepper-connector {
+                background-color: yellow;
             }
         }
 }
@@ -47,8 +95,12 @@
         flex-direction: row;
         justify-content: space-between;
 
-            .projects-holder{
+            .project-div-holder{
                 flex-direction: column;
+
+                    .projects-holder{
+                        flex-direction: column;
+                    }
             }
 
             .stepper-holder {
@@ -57,17 +109,18 @@
                 right: 2em;
                 transform: translateY(-50%);
                 flex-direction: column;
-                justify-content: start;
+                justify-content: space-evenly;
+                height: 50%;
 
                     .stepper {
-                        justify-self: center;
-                        width: 50px;
-                        margin: 1em 0;
+                        margin: 0;
+                        transform: rotate(90deg);
                     }
 
-                    .active-stepper {
-                        height: 100px;
-                        border-radius: 10px;
+                    .stepper-connector {
+                        width: 90px;
+                        margin: 0;
+                        transform: rotate(90deg);
                     }
             }
     }
