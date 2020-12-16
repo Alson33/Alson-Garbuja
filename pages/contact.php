@@ -1,3 +1,25 @@
+<?php
+
+    if(isset($_GET['error']) || isset($_GET['mssg'])){
+        if(isset($_GET['error'])){
+            $error = $_GET['error'];
+
+            if($error == "Senderror"){
+                $i = "fas fa-bug";
+                $m = "Email has not been sent, please try again";
+            }else{
+                $i = "fas fa-exclamation-triangle";
+                $m = "Please respect the work put into creating things.";
+            }
+
+        }else{
+            $i = "far fa-check-circle";
+            $m = "Email has been sent, thank you for contacting";
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +31,39 @@
 
     <link rel="stylesheet" href="../styles/main-style.css">
     <link rel="stylesheet" href="../styles/contact.css">
+
+    <style>
+
+        <?php
+            if(isset($_GET['error'])){
+                echo 
+                "
+                .error-div {
+                    display: flex;
+                    background-color: red;
+                }
+                ";
+            }
+
+            if(isset($_GET['mssg'])){
+                echo
+                "
+                .error-div {
+                    display: flex;
+                    background-color: lightgreen;
+                ";
+            }
+        ?>
+
+    </style>
 </head>
 <body>
+
+    <div class="error-div">
+        <div><i class='<?= $i ?>'></i></div>
+        <div><p><?= $m ?></p></div>
+        <div class="error-div-close"><span>&times;</span></div>
+    </div>
     
     <header>
         <span class="logo">
@@ -29,13 +82,13 @@
     <main>
         <div class="form-wrapper">
             <h2>EMAIL ME</h2>
-            <form action="" method="post">
+            <form action="../php/sendMail.php" method="post">
                 <table>
                     <tr>
                         <td><input type="email" name="email" placeholder="Email"/></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="sub" placeholder="Name"/></td>
+                        <td><input type="text" name="name" placeholder="Name"/></td>
                     </tr>
                     <tr>
                         <td><textarea name="mssg" cols="30" rows="5" placeholder="Message.."></textarea></td>
@@ -80,5 +133,19 @@
             </div>
         </div>
     </main>
+
+    <script>
+        var errorDiv = document.getElementsByClassName('error-div')[0];
+
+        document.getElementsByClassName('error-div-close')[0].addEventListener('click', (){
+            errorDiv.style.display = "none";
+        });
+
+        if(errorDiv.style.display == "flex"){
+            setTimeout(() => {
+                errorDiv.style.display = "none";
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
