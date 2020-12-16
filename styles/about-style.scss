@@ -43,10 +43,6 @@ h2{
             .ing:hover{
                 color: red;
             }
-
-            .git:hover{
-                color: orangered;
-            }
         }
 
         .description-section {
@@ -120,8 +116,23 @@ h2{
         flex-direction: column;
         padding: 2rem 0;
 
+            .profile-section {
+                .fb{
+                    color: steelblue;
+                }
+    
+                .tw{
+                    color: lightskyblue;
+                }
+    
+                .ing{
+                    color: red;
+                }
+            }
+
             .description-section {
                 .skills-section{
+
                     .skill-set-holder {
                         justify-content: space-evenly;
 

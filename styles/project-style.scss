@@ -32,6 +32,7 @@
 
             .projects-holder {
                 display: none;
+                flex-wrap: wrap;
     
                 .project {
                     width: 200px;
@@ -118,9 +119,7 @@
                     }
 
                     .stepper-connector {
-                        width: 90px;
-                        margin: 0;
-                        transform: rotate(90deg);
+                        display: none;
                     }
             }
     }

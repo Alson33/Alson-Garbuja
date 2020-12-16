@@ -1,4 +1,32 @@
 
+@keyframes moveFromTop {
+    0% {
+       top: 0;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+.error-div {
+    width: 30%;
+    position: fixed;
+    top: 10px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: moveFromTop 0.5s ease-in-out;
+    display: none;
+
+        .error-div-close {
+            span {
+                font-size: 1.5rem;
+            }
+        }
+}
+
 .form-wrapper, .social-platforms-wrapper {
     width: 30%;
     margin: auto auto;

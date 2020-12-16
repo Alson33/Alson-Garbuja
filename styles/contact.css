@@ -1,3 +1,43 @@
+@-webkit-keyframes moveFromTop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+@keyframes moveFromTop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+.error-div {
+  width: 30%;
+  position: fixed;
+  top: 10px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-animation: moveFromTop 0.5s ease-in-out;
+          animation: moveFromTop 0.5s ease-in-out;
+  display: none;
+}
+
+.error-div .error-div-close span {
+  font-size: 1.5rem;
+}
+
 .form-wrapper, .social-platforms-wrapper {
   width: 30%;
   margin: auto auto;

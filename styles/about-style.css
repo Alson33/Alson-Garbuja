@@ -45,10 +45,6 @@ h2 {
   color: red;
 }
 
-.about-container .profile-section .git:hover {
-  color: orangered;
-}
-
 .about-container .description-section {
   padding: 0 1em;
 }
@@ -125,6 +121,15 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 2rem 0;
+  }
+  .about-container .profile-section .fb {
+    color: steelblue;
+  }
+  .about-container .profile-section .tw {
+    color: lightskyblue;
+  }
+  .about-container .profile-section .ing {
+    color: red;
   }
   .about-container .description-section .skills-section .skill-set-holder {
     -webkit-box-pack: space-evenly;

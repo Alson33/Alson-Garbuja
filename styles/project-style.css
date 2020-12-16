@@ -66,6 +66,8 @@
 
 .project-wrapper .project-div-holder .projects-holder {
   display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .project-wrapper .project-div-holder .projects-holder .project {
@@ -174,10 +176,7 @@
             transform: rotate(90deg);
   }
   .project-wrapper .stepper-holder .stepper-connector {
-    width: 90px;
-    margin: 0;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    display: none;
   }
 }
 /*# sourceMappingURL=project-style.css.map */
