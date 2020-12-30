@@ -15,7 +15,7 @@
         stepperConnector.classList.add('stepper-connector');
         stepperConnector.classList.add('connector'+i);
 
-        if(stepperConnector.classList.contains('connector1')){
+        if(stepperConnector.classList.contains('connector3')){
             stepperConnector.classList.add('active-stepper-connector');
         }
 
@@ -23,7 +23,7 @@
         stepper.classList.add(yr);
         stepper.classList.add(i);
 
-        if(stepper.classList.contains('2018')){
+        if(stepper.classList.contains('2020')){
             stepper.classList.add('active-stepper');
         }
         stepper.innerHTML = date.getFullYear() - 1 + i;
