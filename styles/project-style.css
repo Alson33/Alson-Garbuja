@@ -54,34 +54,65 @@
           flex-direction: column;
 }
 
-.project-wrapper .project-div-holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-}
-
 .project-wrapper .project-div-holder .projects-holder {
   display: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 80%;
+  margin: auto auto;
 }
 
 .project-wrapper .project-div-holder .projects-holder .project {
-  width: 200px;
-  height: 300px;
-  border: 1px solid yellow;
-  border-radius: 10px;
-  margin: 0 1rem 1rem 1rem;
-}
-
-.project-wrapper .project-div-holder .active-projects-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1rem 1rem 5rem 1rem;
+}
+
+.project-wrapper .project-div-holder .projects-holder .project .project-preview img {
+  width: 600px;
+  height: 400px;
+}
+
+.project-wrapper .project-div-holder .projects-holder .project .project-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 2em;
+  text-align: left;
+}
+
+.project-wrapper .project-div-holder .projects-holder .project .project-description div h2 {
+  margin-bottom: 1em;
+}
+
+.project-wrapper .project-div-holder .projects-holder .project .project-description div p {
+  text-align: justify;
+}
+
+.project-wrapper .project-div-holder .projects-holder .project .project-description .project-links-holder a {
+  font-size: 1rem;
+  padding: 0;
+  padding-right: 1em;
+}
+
+.project-wrapper .project-div-holder .projects-holder .project .project-description .project-links-holder a:hover {
+  color: yellow;
+}
+
+.project-wrapper .project-div-holder .projects-holder .project:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.project-wrapper .project-div-holder .active-projects-holder {
+  display: block;
   -webkit-animation: fadeIn 1s ease-in-out;
           animation: fadeIn 1s ease-in-out;
 }
@@ -134,15 +165,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .project-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .project-wrapper .project-div-holder {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -150,33 +172,45 @@
             flex-direction: column;
   }
   .project-wrapper .project-div-holder .projects-holder {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .project-wrapper .project-div-holder .projects-holder .project {
+    width: 100%;
+    margin: 1em 0 2.5em 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-wrapper .project-div-holder .projects-holder .project .project-preview img {
+    width: 100%;
+    height: 200px;
+  }
+  .project-wrapper .project-div-holder .projects-holder .project .project-description {
+    padding: 0;
+  }
+  .project-wrapper .project-div-holder .projects-holder .project .project-description div p {
+    margin-bottom: 1em;
+  }
+  .project-wrapper .project-div-holder .projects-holder .project .project-description .project-links-holder a {
+    color: yellow;
+  }
+  .project-wrapper .project-div-holder .projects-holder .project:nth-child(even) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .project-wrapper .stepper-holder {
-    position: fixed;
-    top: 50%;
-    right: 2em;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    height: 50%;
-  }
-  .project-wrapper .stepper-holder .stepper {
-    margin: 0;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  .project-wrapper .stepper-holder .stepper-connector {
-    display: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=project-style.css.map */
