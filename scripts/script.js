@@ -83,3 +83,10 @@ document.getElementsByClassName('3')[0].addEventListener(
         displayProject('2020');
     }
 );
+
+document.getElementsByClassName('4')[0].addEventListener(
+    'click', function(){
+        activeStepper('4');
+        displayProject('2021');
+    }
+);

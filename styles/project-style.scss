@@ -39,7 +39,9 @@
                         .project-preview {
                             img {
                                 width: 600px;
-                                height: 400px;
+                                height: 350px;
+                                border-radius: 10px;
+                                box-shadow: black 2px 5px 10px;
                             }
                         }
 
@@ -177,6 +179,9 @@
             .stepper-holder {
                 justify-content: space-between;
 
+                    .stepper {
+                        font-size: .75rem;
+                    }
                     // .stepper-connector {
                     //     display: none;
                     // }
