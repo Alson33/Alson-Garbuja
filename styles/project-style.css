@@ -70,7 +70,6 @@
 .project-wrapper .project-div-holder .projects-holder .project .project-preview img {
   width: 600px;
   height: 350px;
-  border-radius: 10px;
   -webkit-box-shadow: black 2px 5px 10px;
           box-shadow: black 2px 5px 10px;
 }
